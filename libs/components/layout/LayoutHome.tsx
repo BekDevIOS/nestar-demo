@@ -1,3 +1,6 @@
+import Footer from "@/libs/components/Footer";
+import Top from "@/libs/components/Top";
+import HeaderFilter from "@/libs/homepage/HeaderFilter";
 import { Stack } from "@mui/material";
 import Head from "next/head";
 
@@ -9,13 +12,22 @@ const withLayoutMain = (Component: any) => {
           <title>Nestar</title>
         </Head>
         <Stack id="pc-wrap">
-          <Stack sx={{ background: "#81c784" }}>Header Home</Stack>
+          <Stack id="top">
+            <Top />
+          </Stack>
+          <Stack className="header-main">
+            <Stack className="container">
+              <HeaderFilter />
+            </Stack>
+          </Stack>
 
           <Stack id="main">
             <Component {...props} />
           </Stack>
 
-          <Stack sx={{ background: "#a1887f" }}>Footer</Stack>
+          <Stack id="footer">
+            <Footer />
+          </Stack>
         </Stack>
       </>
     );
