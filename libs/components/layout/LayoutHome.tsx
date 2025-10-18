@@ -1,6 +1,6 @@
 import Footer from "@/libs/components/Footer";
 import Top from "@/libs/components/Top";
-import HeaderFilter from "@/libs/homepage/HeaderFilter";
+import HeaderFilter from "@/libs/components/homepage/HeaderFilter";
 import { Stack } from "@mui/material";
 import Head from "next/head";
 
